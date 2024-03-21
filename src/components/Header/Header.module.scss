@@ -7,11 +7,11 @@ header {
   .wrapper {
     display: flex;
     justify-content: end;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #454545;
     width: 66%;
 
     .link {
-      border-left: 2px solid black;
+      border-left: 2px solid #454545;
       position: relative;
 
       a {
@@ -29,12 +29,12 @@ header {
         display: block;
         width: 32px;
         height: 32px;
-        background: red;
+        background: #d40b0b;
         position: absolute;
         bottom: -17px;
         left: -17px;
         border-radius: 32px;
-        border: 2px solid black;
+        border: 2px solid #454545;
       }
     }
   }
