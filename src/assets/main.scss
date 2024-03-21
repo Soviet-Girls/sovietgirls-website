@@ -14,6 +14,7 @@
 
 * {
   box-sizing: border-box;
+  transition: 0.1s ease;
 }
 
 body {
@@ -26,4 +27,8 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.page {
+  min-height: calc(100vh - 95px);
 }
