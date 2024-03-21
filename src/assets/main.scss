@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Rodchenko";
+  src: url("/fonts/rodchenko.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("/fonts/bahnschrift.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: condensed;
+}
+
+a {
+  text-decoration: none;
+}
