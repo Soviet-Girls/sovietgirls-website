@@ -15,7 +15,7 @@ const Footer: FC = () => {
           </a>
         </div>
         <div className={s.contacts}>
-          <div>help@sovietgirls.su</div>
+          <a href="mailto:help@sovietgirls.su">help@sovietgirls.su</a>
           <a href="https://vk.com/sovietgirls_nft">
             <img src="/images/vk.svg" alt="" />
           </a>
