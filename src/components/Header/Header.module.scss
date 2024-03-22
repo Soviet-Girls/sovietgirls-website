@@ -16,9 +16,54 @@ header {
     font-size: 25px;
   }
 
-  &.small {
-    height: 45px;
+  @media (max-width: 500px) {
+    height: 50px;
     font-size: calc(30px * 0.7);
+  }
+
+  &.small {
+    height: 50px;
+    font-size: calc(30px * 0.7);
+  }
+
+  // &.dark {
+  //   background: #000;
+  // }
+
+  .menu {
+    position: absolute;
+    transform: translateX(100vw);
+    transition: 0.2s ease;
+    background: #000000;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    // height: calc(100vh - 50px);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Bahnschrift", sans-serif;
+    overflow-y: scroll;
+
+    &.visible {
+      transform: translateX(0vw);
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      font-family: "Rodchenko", sans-serif;
+      font-size: 37px;
+      gap: 45px;
+      padding-top: 30px;
+
+      > a {
+        padding: 0px 30px;
+        color: #fff;
+      }
+    }
   }
 
   .wrapper {
@@ -32,6 +77,10 @@ header {
       padding: 0px 50px;
     }
 
+    @media (max-width: 500px) {
+      padding: 0px 20px;
+    }
+
     .logo {
       display: flex;
       align-items: center;
@@ -40,9 +89,30 @@ header {
       user-select: none;
     }
 
+    .chezbargo {
+      display: none;
+      border-radius: 0px;
+      border: 0px;
+      background: unset;
+      padding: 0px;
+      margin: 0px;
+
+      > img {
+        width: 25px;
+      }
+
+      @media (max-width: 500px) {
+        display: unset;
+      }
+    }
+
     .links {
       display: flex;
       gap: 50px;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
 
       .link {
         // border-left: 2px solid #454545;

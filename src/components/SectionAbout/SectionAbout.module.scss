@@ -4,7 +4,7 @@ section.about {
   background-image: url("/images/about-bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  border: 2px solid red;
+  // border: 2px solid red;
   position: relative;
 
   @media (max-width: 1000px) {
@@ -12,7 +12,7 @@ section.about {
   }
 
   img {
-    border: 2px solid red;
+    // border: 2px solid red;
     position: absolute;
     bottom: 0px;
     left: -5%;
@@ -47,8 +47,9 @@ section.about {
     }
 
     @media (max-width: 500px) {
-      padding: 10px;
+      padding: 20px;
       padding-bottom: 300px;
+      font-size: 20px;
     }
 
     p {
@@ -56,7 +57,7 @@ section.about {
       flex-wrap: wrap;
       background: #fff;
       padding: 10px;
-      border: 2px solid red;
+      // border: 2px solid red;
       margin-top: 0px;
 
       @media (max-width: 500px) {
@@ -69,6 +70,7 @@ section.about {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 50px 0px;
       }
 
       a {

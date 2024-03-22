@@ -13,7 +13,8 @@ const SectionArtwork: FC = () => {
         </div>
       </div>
       <div className={s.artworkContainerMobile}>
-        <img src="/images/artwork-mobile.png" alt="" />
+        <img src="/images/artwork-mobile.png" alt="" className={s.cover} />
+        <img src="/images/arrow-down.svg" alt="" className={s.arrow} />
       </div>
     </section>
   )
