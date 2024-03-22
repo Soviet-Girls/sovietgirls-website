@@ -6,7 +6,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 15;
-  background: #f4f4f4;
+  background: #f4f4f4c5;
+  backdrop-filter: blur(50px) saturate(300%);
   transition: 0.1s ease;
   font-size: 30px;
   line-height: 2em;
