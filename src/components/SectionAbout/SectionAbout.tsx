@@ -9,9 +9,6 @@ const SectionAbout: FC = () => {
 
   return (
     <section className={s.about}>
-      <div className={s.imageWrapper}>
-        <img src="/images/girl.png" alt="" />
-      </div>
       <div className={s.info}>
         {/* <p>{splitTextToSpans(paragraph1)}</p>
           <p>{splitTextToSpans(paragraph2)}</p> */}
@@ -23,6 +20,7 @@ const SectionAbout: FC = () => {
           </a>
         </div>
       </div>
+      <img src="/images/girl.png" alt="" />
     </section>
   )
 }

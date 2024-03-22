@@ -12,6 +12,9 @@ const SectionArtwork: FC = () => {
           <p>аниме-девушек</p>
         </div>
       </div>
+      <div className={s.artworkContainerMobile}>
+        <img src="/images/artwork-mobile.png" alt="" />
+      </div>
     </section>
   )
 }
