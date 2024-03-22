@@ -1,14 +1,21 @@
 .main {
+  padding-top: 95px;
+
   section.artwork {
     padding: 0px 300px;
-    // border: 1px solid red;
     margin-bottom: 100px;
     padding-bottom: 100px;
-    border-bottom: 2px solid #454545;
+    // border-bottom: 2px solid #454545;
+    height: calc(100vh - 95px);
+    // border: 25px solid black;
+    border-top: 0px;
+    background: #f4f4f4;
 
     .artworkContainer {
       position: relative;
       height: 80vh;
+      width: 1000px;
+      margin: auto;
 
       img {
         position: absolute;
@@ -23,7 +30,7 @@
         line-height: 1em;
         position: absolute;
         top: 80%;
-        left: 60%;
+        left: 70%;
 
         p {
           margin-top: 0px;
@@ -48,46 +55,74 @@
   section.about {
     position: relative;
     // border: 1px solid red;
-    height: 90vh;
+    height: 80vh;
     background-image: url("/images/about-bg.png");
     background-position: bottom;
+    // padding: 0px 150px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    // border: 2px solid red;
 
-    img {
-      position: absolute;
-      height: 80vh;
-      bottom: 0px;
+    // img {
+    //   position: absolute;
+    //   height: 80vh;
+    //   bottom: 0px;
+    //   left: 0px;
+    //   user-select: none;
+    // }
+
+    // > * {
+    //   border: 2px solid green;
+    // }
+
+    .imageWrapper {
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
     }
 
     .info {
-      margin-left: 40%;
-      margin-right: 40px;
-      margin-top: 100px;
+      // margin-left: 40%;
+      // margin-right: 40px;
+      // margin-top: 100px;
+      padding-right: 150px;
+      z-index: 10;
+      position: relative;
+      line-height: 1.3em;
+      color: #272727;
 
       p {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.2em;
-
-        span {
-          background: #f4f4f4;
-        }
+        background: #fff;
       }
 
       .buttonContainer {
-        display: flex;
-        justify-content: end;
+        // display: flex;
+        // justify-content: end;
         margin-top: 50px;
-        padding-right: 100px;
+        // padding-right: 100px;
 
         a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 5px;
           background: black;
-          padding: 15px 40px 10px 40px;
           font-family: "Rodchenko", sans-serif;
           color: #fff;
+          width: 200px;
+          height: 50px;
 
           &:hover {
             background: #d40b0b;
             transition: 0.1s ease;
+            box-shadow: 5px 5px 0px 0px black;
           }
         }
       }

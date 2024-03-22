@@ -3,38 +3,71 @@ header {
   display: flex;
   justify-content: end;
   font-family: "Rodchenko", sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+  background: #f4f4f4;
+  transition: 0.1s ease;
+  font-size: 30px;
+  line-height: 2em;
+
+  &.small {
+    height: 45px;
+    font-size: calc(30px * 0.7);
+  }
 
   .wrapper {
     display: flex;
-    justify-content: end;
-    border-bottom: 2px solid #454545;
-    width: 66%;
+    justify-content: space-between;
+    // border-bottom: 2px solid #454545;
+    width: 100%;
+    padding: 0px 150px;
 
-    .link {
-      border-left: 2px solid #454545;
-      position: relative;
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d40b0b;
+      // user-select: none;
+    }
 
-      a {
-        color: black;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px 50px;
-      }
+    .links {
+      display: flex;
+      gap: 50px;
 
-      &:last-child::after {
-        content: "";
-        display: block;
-        width: 32px;
-        height: 32px;
-        background: #d40b0b;
-        position: absolute;
-        bottom: -17px;
-        left: -17px;
-        border-radius: 32px;
-        border: 2px solid #454545;
+      .link {
+        // border-left: 2px solid #454545;
+        position: relative;
+
+        a {
+          color: #000;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // padding: 0px 50px;
+          // padding-top: 5px;
+
+          &:hover {
+            color: #d40b0b;
+            transition: 0.1s ease;
+            box-shadow: 0px -5px 0px 0px #d40b0b inset;
+          }
+        }
+
+        // &:last-child::after {
+        //   content: "";
+        //   display: block;
+        //   width: 32px;
+        //   height: 32px;
+        //   background: #d40b0b;
+        //   position: absolute;
+        //   bottom: -17px;
+        //   left: -17px;
+        //   border-radius: 32px;
+        //   border: 2px solid #454545;
+        // }
       }
     }
   }

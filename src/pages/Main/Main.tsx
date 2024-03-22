@@ -7,10 +7,6 @@ const Main: FC = () => {
   const paragraph2 =
     "Владельцы NFT «Soviet Girls» также получают эксклюзивные возможности, включая доступ в закрытую беседу ВКонтакте с внутренней информацией, прямую связь с авторами коллекции, участие в закрытых розыгрышах и ранний доступ к следующим дропам от авторов коллекции и их партнеров."
 
-  const splitTextToSpans = (paragraph: string): JSX.Element[] => {
-    return paragraph.split(" ").map((word) => <span>{word}</span>)
-  }
-
   return (
     <div className={`page ${s.main}`}>
       <section className={s.artwork}>
@@ -24,10 +20,14 @@ const Main: FC = () => {
         </div>
       </section>
       <section className={s.about}>
-        <img src="/images/girl.png" alt="" />
+        <div className={s.imageWrapper}>
+          <img src="/images/girl.png" alt="" />
+        </div>
         <div className={s.info}>
-          <p>{splitTextToSpans(paragraph1)}</p>
-          <p>{splitTextToSpans(paragraph2)}</p>
+          {/* <p>{splitTextToSpans(paragraph1)}</p>
+          <p>{splitTextToSpans(paragraph2)}</p> */}
+          <p>{paragraph1}</p>
+          <p>{paragraph2}</p>
           <div className={s.buttonContainer}>
             <a href="https://vk.com/@sovietgirls_nft-about" target="_blank">
               Подробнее
