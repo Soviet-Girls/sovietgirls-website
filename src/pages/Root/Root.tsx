@@ -1,16 +1,18 @@
-import { FC } from "react";
-import { Outlet } from "react-router-dom";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+import { FC } from "react"
+import { Outlet } from "react-router-dom"
+import Header from "../../components/Header/Header"
+import Footer from "../../components/Footer/Footer"
+import Popup from "../../components/Popup/Popup"
 
 const Root: FC = () => {
-    return (
-        <div className="root">
-            <Header />
-            <Outlet />
-            <Footer />
-        </div>
-    )
-};
+  return (
+    <div className="root">
+      <Header />
+      <Outlet />
+      <Popup />
+      <Footer />
+    </div>
+  )
+}
 
-export default Root;
+export default Root
