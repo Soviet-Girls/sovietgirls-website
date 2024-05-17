@@ -1,11 +1,13 @@
 section.about {
   position: relative;
   height: 80vh;
-  background-image: url("/images/about-bg.png");
+  // background-image: url("/images/about-bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
   // border: 2px solid red;
   position: relative;
+  background-color: #f4f4f4;
+  padding-top: 100px;
 
   @media (max-width: 1000px) {
     height: unset;
@@ -15,8 +17,8 @@ section.about {
     // border: 2px solid red;
     position: absolute;
     bottom: 0px;
-    left: -5%;
-    height: 100%;
+    right: -5%;
+    height: 110%;
     margin-bottom: 0px;
 
     @media (max-width: 1000px) {
@@ -28,12 +30,12 @@ section.about {
   }
 
   .info {
-    padding-right: 150px;
+    padding-left: 150px;
     z-index: 10;
     position: absolute;
     line-height: 1.3em;
     color: #272727;
-    left: 40%;
+    right: 40%;
 
     @media (max-width: 1300px) {
       padding-right: 50px;
@@ -53,10 +55,9 @@ section.about {
     }
 
     p {
-      display: flex;
       flex-wrap: wrap;
-      background: #fff;
-      padding: 10px;
+      // background: #fff;
+      // padding: 10px;
       // border: 2px solid red;
       margin-top: 0px;
 

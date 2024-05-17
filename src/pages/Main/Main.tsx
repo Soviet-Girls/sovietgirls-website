@@ -1,13 +1,15 @@
 import { FC } from "react"
 import s from "./Main.module.scss"
 import SectionArtwork from "../../components/SectionArtwork/SectionArtwork"
-import SectionAbout from "../../components/SectionAbout/SectionAbout"
+import SectionAboutTON from "../../components/SectionAbout/SectionAboutTON"
+import SectionAboutSG from "../../components/SectionAboba/SectionAboutSG"
 
 const Main: FC = () => {
   return (
     <div className={`page ${s.main}`}>
       <SectionArtwork />
-      <SectionAbout />
+      <SectionAboutTON />
+      <SectionAboutSG />
     </div>
   )
 }
