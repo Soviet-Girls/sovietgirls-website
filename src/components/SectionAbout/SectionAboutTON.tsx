@@ -4,19 +4,17 @@ import s from "./SectionAboutTON.module.scss"
 const SectionAboutTON: FC = () => {
   const paragraph1 = (
     <p>
-      <strong>«Soviet Girls TON»</strong> — это новая коллекция в сети The Open
-      Network. Там аниме девочки. Она является началом масштабного проекта
-      создания инструментов для переноса активов из сети Polygon. Главная цель
-      проекта — помочь пользователям перейти из сети Polygon в экосистему TON.
+      <strong>«Soviet Girls TON»</strong> — это масштабный проект в сети The Open Network (TON), 
+      реализованный в виде NFT-коллекции, который предоставляет инструменты для переноса цифровых 
+      активов из сети Polygon в экосистему TON.
     </p>
   )
   const paragraph2 = (
     <p>
-      Планируется запуск моста между Polygon и TON, который позволит переводить
-      токены ERC20 в Jetton и обратно между сетями. После запуска моста мы
-      добавим поддержку переноса NFT. Комиссии за переводы и последующие продажи
-      wNFT будут распределяться между владельцами NFT из коллекции Soviet Girls
-      TON.
+      Коллекция включает в себя 283 уникальных персонажа с разнообразными атрибутами и параметрами, 
+      которые могут являться как перспективной инвестицией, так и радующим душу украшением. Средства, 
+      полученные от продажи коллекции, мы планируем использовать для запуска и развития собственных 
+      сервисов в экосистеме TON. 
     </p>
   )
 
@@ -28,7 +26,7 @@ const SectionAboutTON: FC = () => {
         {paragraph1}
         {paragraph2}
         <div className={s.buttonContainer}>
-          <a href="https://vk.com/@sovietgirls_nft-about" target="_blank">
+          <a href="https://telegra.ph/Informaciya-o-kollekcii-Soviet-Girls-TON-05-06" target="_blank">
             Подробнее
           </a>
         </div>
